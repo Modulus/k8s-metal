@@ -3,7 +3,7 @@
     git:
       repo: https://github.com/kubernetes-sigs/kubespray.git
       dest: /tmp/kubespray
-      version: release-2.10
+      version: v2.10.4
   
   - name: Copy inventory to /tmp/kubespray/inventory/local/hosts.ini
     template:
