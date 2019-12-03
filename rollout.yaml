@@ -1,0 +1,6 @@
+---
+  - name: Clone kubespray to tmp folder 
+    hosts: localhost
+    connection: local
+    roles:
+      - kubespray

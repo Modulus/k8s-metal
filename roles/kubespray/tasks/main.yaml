@@ -1,0 +1,11 @@
+---
+  - name: Clone kubespray repo
+    git:
+      repo: https://github.com/kubernetes-sigs/kubespray.git
+      dest: /tmp/kubespray
+      version: release-2.10
+  
+  - name: Copy inventory to /tmp/kubespray/inventory/local/hosts.ini
+    template:
+      src: templates/inventory.ini
+      dest: /tmp/kubespray/inventory/local/hosts.ini
